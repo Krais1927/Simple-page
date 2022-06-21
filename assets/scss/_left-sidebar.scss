@@ -1,0 +1,13 @@
+.left-sidebar{
+  background: $light-color;
+  position: relative;
+
+  @media(min-width: 768px){
+    order: 2;
+    flex: 0 0 $col-size;
+    padding: 0 15px 15px 20px;
+  }
+  
+
+
+}

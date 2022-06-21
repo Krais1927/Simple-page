@@ -1,0 +1,37 @@
+.bottom-sidebar{
+  background: $light-color;
+  order: 4;
+  display: flex;
+  flex-wrap: wrap;
+  @media(min-width: 768px){
+    flex: 1 0 100%;
+    padding: 15px;
+  }
+  p{
+    line-height: 1.5;
+    margin: 0;
+  }
+  &__left{
+    display: flex;
+    padding: 20px 15px  25px;
+    flex: 0 0 50%;
+    border: 5px solid #ffffff;
+    align-items: flex-start;
+    @extend %linear-gradient;
+    
+  }
+  &__right{
+    display: flex;
+    padding: 20px 15px  25px;
+    flex: 0 0 50%;
+    border: 5px solid #ffffff;
+    align-items: flex-end;
+    @extend %linear-gradient;
+    
+  }
+
+  img{
+    padding: 0 15px 15px 0;
+  }
+  
+}
