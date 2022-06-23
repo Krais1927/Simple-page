@@ -1,3 +1,4 @@
+@use "sass:math";
 .left-sidebar{
   background: $light-color;
   position: relative;
@@ -6,8 +7,51 @@
     order: 2;
     flex: 0 0 $col-size;
     padding: 0 15px 15px 20px;
+    &::after{
+      position: absolute;
+      content: "";
+      height: 90%;
+      border-right: 1px solid darken($light-color, 7%);
+      right: 0;
+      top: 15px;
+    }
+
   }
   
+  ul{
+    
+    
+    padding-left: 20px;
+    
+  }
+  li{
+    position: relative;
+    list-style: none;
+    color: #858585;
+    font-style: italic;
+    padding: 7.5px;
 
+    &::before{
+      position: absolute;
+      content: url("../img/main-list-arrow.png");
+      margin-left: -15px;
+    }
+    span{
+      position: relative;
+
+      &::after{
+        position: absolute;
+        content: "";
+        left: 0;
+        right: 0;
+        height: 1px;
+        bottom: -10px;
+        background-color: darken($light-color, 7%);
+      }
+    }
+
+    
+    
+  }
 
 }
