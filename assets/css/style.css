@@ -731,6 +731,88 @@ i {
 .bottom-sidebar img {
   padding: 0 15px 15px 0;
 }
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.footer .menu__btn {
+  display: none;
+}
+.footer .menu__list-item {
+  font-size: 0.9rem;
+}
+.footer .wrapper {
+  margin-top: 37px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.twitter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.twitter__image {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 55px;
+          flex: 0 0 55px;
+}
+.twitter__description {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 100px;
+          flex: 1 0 100px;
+}
+.twitter__description-title {
+  display: block;
+  color: white;
+  font-size: 2rem;
+}
+.twitter__description-slogan {
+  color: #727272;
+}
+.twitter__post {
+  position: relative;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 calc(100% - 67px);
+          flex: 1 0 calc(100% - 67px);
+  padding: 20px;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.4);
+}
+.twitter__post-text {
+  line-height: 18px;
+}
+.twitter__post-date {
+  color: #0b81be;
+  font-size: 0.83rem;
+  font-style: italic;
+}
+
+.copyright {
+  color: white;
+}
+
+.footer-logo {
+  text-align: right;
+  margin: 15px;
+}
+
+@media (min-width: 577px) {
+  .twitter__post {
+    margin: 12px 30px 30px 37px;
+  }
+}
+
 @media (min-width: 768px) {
   .main {
     -webkit-box-ordinal-group: 4;
@@ -781,6 +863,7 @@ i {
     padding: 20px 15px 25px;
   }
 }
+
 @media (min-width: 769px) {
   .carousel-slide__text {
     -webkit-box-flex: 1;
@@ -802,10 +885,43 @@ i {
             flex-grow: 1;
   }
 }
+
 @media (min-width: 851px) {
   .carousel-slide__image {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 250px;
             flex: 0 0 250px;
+  }
+  .copyright {
+    margin: 57px 15px 15px 15px;
+    text-align: right;
+  }
+}
+
+@media (max-width: 850px) {
+  .footer .menu__list {
+    top: initial;
+    bottom: 100%;
+  }
+}
+
+@media (max-width: 850px) and (min-width: 769px) {
+  .footer-left {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 60%;
+            flex: 0 0 60%;
+  }
+  .footer-right {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 40%;
+            flex: 0 0 40%;
+  }
+}
+
+@media (max-width: 576px) {
+  .footer .menu {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }

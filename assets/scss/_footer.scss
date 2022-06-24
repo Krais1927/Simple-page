@@ -1,0 +1,105 @@
+.footer{
+  display: flex;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  justify-content: center;
+
+  &-left{
+    @media (max-width: 850px) and (min-width: 769px) {
+      flex: 0 0 60%;
+    }
+  }
+
+  &-right{
+    @media (max-width: 850px) and (min-width: 769px) {
+      flex: 0 0 40%;
+    }
+  }
+  .menu {
+    @media (max-width: $xsmall) {
+        justify-content: center;
+    }
+
+    &__btn {
+        display: none;
+    }
+
+    &__list {
+        @media (max-width: $large) {
+            top: initial;
+            bottom: 100%;
+        }
+
+        &-item {
+            font-size: 0.9rem;
+        }
+    }
+}
+
+  .wrapper{
+    margin-top: 37px;
+    display: flex;
+  }
+}
+
+.twitter{
+  display: flex;
+  flex-wrap: wrap;
+
+    &__image{
+      flex: 0 0 55px;
+    }
+
+    &__description{
+      flex: 1 0 100px;
+
+      &-title{
+        display: block;
+        color: #ffff;
+        font-size: 2rem;
+      }
+
+      &-slogan{
+        color: #727272;
+      }
+      
+    }
+
+    &__post{
+      position: relative;
+      flex: 1 0 calc(100% - 67px);
+      padding: 20px;
+      border-radius: 10px;
+      background: rgba(0, 0, 0, 0.4);
+      
+
+      @media (min-width: 577px) {
+        margin: 12px 30px 30px 37px;
+    }
+
+    &-text{
+      line-height: 18px;
+    }
+    &-date{
+      color: $accent-color;
+
+        font-size: 0.83rem;
+        font-style: italic;
+    }
+    }
+
+    
+}
+.copyright{
+  color: #ffff;
+  @media (min-width: 851px) {
+    margin: 57px 15px 15px 15px;
+  text-align: right;
+}
+}
+
+.footer-logo{
+  
+    text-align: right;
+ margin: 15px;
+}
